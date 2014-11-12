@@ -3,7 +3,7 @@ GARFILED v0.1 :: Damnsoft
 Elias Zacarias                05/25/2004
 (Updated on 08/15/2013 to reflect the upgrade to GPL v3)
 
-
+(This GitHub repository is a fork of the original project by Vdragon and has no relationship with Damnsoft)
 
 Introduction
 ----------------------
