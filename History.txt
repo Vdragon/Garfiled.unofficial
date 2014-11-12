@@ -1,0 +1,13 @@
+08/15/2013:      v 0.101
+------------------------------------------------
+New Features:
+ - Upgraded license to GPL v3
+ - Packaged source and binaries into the same bundle
+ - Added a Windows binary and project file (Dev-Cpp)
+ - Case-insensitive command line switches
+ - Added info on the -cr flag in the cmd line help.
+ 
+
+05/25/2004:      v 0.1b Released
+------------------------------------------------
+  - Original version

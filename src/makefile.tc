@@ -1,0 +1,22 @@
+########################################################
+##                                                    ##
+## GARFILED v0.101 Makefile                           ##
+## -------------------------------------------------- ##
+## Designed to compile under TC.                      ##
+##                                                    ##
+########################################################
+CC = tcc
+CFLAGS = -O2
+DEL = del
+OBJS =garfiled.obj
+EXE = garfiled.exe
+
+$(EXE):	$(OBJS)
+	$(CC) $(CFLAGS) -e$(EXE) $(OBJS)
+
+$(OBJS): garfiled.c
+		$(CC) $(CFLAGS) -c garfiled.c
+
+clean:
+	$(DEL) *.obj
+	$(DEL) $(EXE)

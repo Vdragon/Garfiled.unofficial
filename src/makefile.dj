@@ -1,0 +1,23 @@
+########################################################
+##                                                    ##
+## GARFILED v0.101 Makefile                           ##
+## -------------------------------------------------- ##
+## Designed to compile under DJGPP.                   ##
+##                                                    ##
+########################################################
+CC = gcc
+CFLAGS = -O2
+LFLAGS = -s
+DEL = del
+OBJS = garfiled.o
+EXE = garfiled32.exe
+
+$(EXE):	$(OBJS)
+	$(CC) $(CFLAGS) -Wl,$(LFLAGS) -o $(EXE) $(OBJS)
+
+$(OBJS): garfiled.c
+		$(CC) $(CFLAGS) -c garfiled.c
+
+clean:
+	$(DEL) *.o
+	$(DEL) $(EXE)
